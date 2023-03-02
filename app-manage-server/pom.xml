@@ -12,7 +12,11 @@
     <artifactId>app-manage-server</artifactId>
 
     <dependencies>
-
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>database</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>

@@ -1,6 +1,12 @@
 server:
-  port: 8081
+  port: 8089
   servlet:
     context-path: /apis
   tomcat:
       uri-encoding: UTF-8
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 12345
+    url: jdbc:mysql://127.0.0.1:8081/a?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
