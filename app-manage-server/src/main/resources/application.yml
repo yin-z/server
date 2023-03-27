@@ -10,3 +10,10 @@ spring:
     username: root
     password: 12345
     url: jdbc:mysql://127.0.0.1:3306/a?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+  redis:
+    host: 127.0.0.1
+    password: 12345
+    port: 6379
+springdoc:
+  api-docs:
+    path: /a
