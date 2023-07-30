@@ -19,7 +19,7 @@
         </dependency>
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>redis</artifactId>
+            <artifactId>schedule</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
