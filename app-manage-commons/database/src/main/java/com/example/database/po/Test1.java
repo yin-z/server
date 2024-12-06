@@ -1,4 +1,4 @@
-package com.example.database.po.mypo;
+package com.example.database.po;
 
 
 import com.baomidou.mybatisplus.annotation.TableId;

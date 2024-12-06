@@ -4,12 +4,13 @@ server:
     context-path: /apis
   tomcat:
       uri-encoding: UTF-8
+  address: 0.0.0.0
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 12345
-    url: jdbc:mysql://127.0.0.1:3306/my_app?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://127.0.0.1:3306/my_app?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
   redis:
     host: 127.0.0.1
     password: 12345
@@ -17,3 +18,21 @@ spring:
 springdoc:
   api-docs:
     path: /a
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml # mapper映射文件
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+project:
+  config:
+    minio-config:
+      host: http://192.168.31.34:9000
+      bucket: bucket123
+      accessKey: minioadmin
+      secretKey: minioadmin
+

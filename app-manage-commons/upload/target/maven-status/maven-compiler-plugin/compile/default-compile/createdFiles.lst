@@ -1,0 +1,4 @@
+com\example\file\FileMapper.class
+com\example\file\FileService.class
+com\example\file\FileServiceImpl.class
+com\example\file\FileController.class

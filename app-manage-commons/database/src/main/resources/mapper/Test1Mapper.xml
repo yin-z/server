@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.database.mapper.Test1Mapper">
+
+    <resultMap id="test" type="com.example.database.po.Test1">
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="sex" property="sex" jdbcType="VARCHAR"/>
+
+    </resultMap>
+    <select id="queryAll" resultMap="test">
+        SELECT
+        a.`name`,
+            a.sex
+        FROM
+            test1 as a
+        <where>
+            <if test="name != null and name != '' ">
+                a.`name` like concat('%',#{name},'%')
+            </if>
+        </where>
+    </select>
+
+</mapper>

@@ -1,8 +1,11 @@
-package com.example.database.mapper.mymapper;
+package com.example.database.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.example.database.po.mypo.Test1;
+import com.example.database.po.Test1;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * @Author yin
@@ -11,5 +14,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
 public interface Test1Mapper extends BaseMapper<Test1> {
+
+    List<Test1> queryAll(@Param("name")String name);
 
 }

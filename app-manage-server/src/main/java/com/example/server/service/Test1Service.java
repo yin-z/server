@@ -1,8 +1,7 @@
 package com.example.server.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.example.database.po.mypo.Test1;
-import org.springframework.stereotype.Service;
+import com.example.database.po.Test1;
 
 import java.util.List;
 
@@ -11,5 +10,5 @@ import java.util.List;
  * @Date 2023/3/2 14:19
  */
 public interface Test1Service extends IService<Test1> {
-    List<Test1>  testAll();
+    List<Test1>  testAll(String name);
 }

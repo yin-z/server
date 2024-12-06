@@ -13,7 +13,7 @@ public class ScheduleController {
    @Resource
     private ScheduledService service;
 
-    @PostConstruct
+//    @PostConstruct
     @PostMapping("/start")
     public void start(){
         service.start();
